@@ -18,10 +18,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+            <Button Text="Toggle" Command="{Binding ToggleCommand}"/>
+            <Button Text="Check" Command="{Binding ToolbarCommand}" Grid.Column="1"/>
         </Grid>
-        <Button Text="Toggle" Command="{Binding ToggleCommand}"/>
-        <Button Text="Check" Command="{Binding ToolbarCommand}" Grid.Column="1"/>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
