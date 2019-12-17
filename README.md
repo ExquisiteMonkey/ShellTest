@@ -12,7 +12,7 @@ Steps taken.
   b) Add Grid above ListView
   c) Add button to first column, bound to ToggleCommand
   d) Add button to second column, bound to ToolbarCommand.
-4. Update Xamarin Forms version to 4.3.0.991211
+4. Update Xamarin Forms version to 4.4.0.991265
 
 
 
@@ -25,3 +25,4 @@ ToolbarItem appears disabled and does not respond to the Toggle being fired.
 Additional;
 If you use Hot Reload to position the buttons under the grid, whilst _state is still true, the view recompiles and the ToolbarItem is now enabled and functions, though it does not respond to further toggle updates.
 Further, if you use hot reload to place the buttons back into grid whilst _state is false, the view recompiles and the ToolbarItem is now disabled, does not function and does not respond to toggle updates.
+Note: After updating to 4.4.0.991265, these two additional notes are no longer valid - the button always appears enabled.
